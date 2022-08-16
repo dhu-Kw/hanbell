@@ -1,0 +1,215 @@
+.hirewrap {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.welcome {
+    position: relative;
+    padding-top: 3rem;
+    left: 2rem;
+}
+.welcome h1 {
+    font-size: 200%;
+    letter-spacing: .1rem;
+    padding: .25rem 0;
+}
+.welcome p {
+    font-size: 120%;
+    color: #000000aa;
+    padding: .25rem 0;
+}
+
+.hire-intro-wrap {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    width: 93%;
+}
+.hire-intro-wrap .intro {
+    background-color: #3eede7;
+    padding: 3rem 2rem;
+}
+.hire-intro-wrap .intro h1 {
+    font-size: 180%;
+    font-weight: normal;
+}
+.hire-intro-wrap .intro p {
+    letter-spacing: .1rem;
+    margin: .5rem 0;
+}
+.jb-wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+.jb-wrap .left {
+    width: 100%;
+    text-align: left;
+    padding-left: 1rem;
+}
+.jb-wrap .left .tag {
+    padding-right: 5rem;
+}
+.jb-wrap .left .tag h1 {
+    font-size: 150%;
+    font-weight: normal;
+    position: relative;
+    display: inline-block;
+}
+.jb-wrap .left .tag h1::after {
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 2rem;
+    height: 2px;
+    background-color: red;
+}
+.jb-wrap .right {
+    width: 100%;
+}
+.jb-wrap .right .jb-list{
+    border-radius: 5px;
+    background-color: white;
+    padding: 1rem;
+    line-height: 1.2rem;
+    margin-top: 1rem;
+}
+.jb-wrap .right .jb-list .jb-item{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    padding: .6rem 0;
+}
+.jb-wrap .right .date {
+    color: #626262;
+}
+.jb-wrap .right .more {
+    letter-spacing: .2rem;
+    color: rebeccapurple;
+    cursor: pointer;
+}
+@media screen and (min-width: 992px) {
+    .hire-intro-wrap {
+        width: calc(100 / 63 * 100%);
+        position: relative;
+        left: calc(10 / 21 * 100% * -1);
+        flex-direction: row;
+        padding-top: 4rem;
+    }
+    .jb-wrap {
+        width: calc(100 / 63 * 100%);
+        position: relative;
+        left: calc(10 / 21 * 100% * -1);
+        flex-direction: row;
+        padding-top: 2rem;
+    }  
+    .hire-intro-wrap .intro {
+        padding: 4rem 4rem 5rem 5rem;
+        width: 55%;
+    }
+    .jb-wrap .left {
+        width: 30%;
+        text-align: right;
+    }
+    .jb-wrap .right {
+        width: 50%;
+        left: 1.5%;
+        position: relative;
+    }
+    .jb-wrap .right .jb-list{
+        border-radius: 5px;
+        padding: 5px 1rem;
+        line-height: 1.5rem;
+    }
+    .jb-wrap .right .jb-list .jb-item {
+        padding: 1rem;
+    }
+}
+
+.jb-detail-wrap {
+    width: calc(100% - 4rem);
+    margin-top: 2rem;
+    padding: 2rem 2rem;
+    background-color: #3eede7;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+.jb-detail-wrap .jb-detail {
+    width: 100%;
+}
+.jb-detail-wrap .jb-name {
+    padding: 0 1rem 1rem 1rem;
+}
+.jb-detail-wrap .jb-info {
+    background-color: white;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 5px;
+    width: calc(100% - 4rem);
+}
+.jb-detail-wrap .jb-info .jb-addr,
+.jb-detail-wrap .jb-info .jb-resp,
+.jb-detail-wrap .jb-info .jb-reqr,
+.jb-detail-wrap .jb-info .jb-apply {
+    padding-bottom: 2rem;
+    width: 100%;
+    display: block;
+}
+.jb-detail-wrap .jb-info .jb-addr {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 80%;
+}
+.jb-detail-wrap .jb-info .jb-addr .addr,
+.jb-detail-wrap .jb-info .jb-addr .department {
+    width: 50%;
+    display: block;
+}
+.jb-detail-wrap .jb-info .jb-addr p {
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.6);
+    min-width: 5.6rem;
+}
+.jb-detail-wrap .jb-info .jb-resp,
+.jb-detail-wrap .jb-info .jb-reqr {
+    line-height: 2rem;
+}
+.jb-detail-wrap .jb-info .jb-resp ol,
+.jb-detail-wrap .jb-info .jb-reqr ol {
+    list-style-position: inside;
+}
+.jb-detail-wrap .jb-info .jb-apply {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+.jb-detail-wrap .jb-info .jb-apply button {
+    padding: .5rem 1rem;
+    margin-right: 1rem;
+    background-color: #065279;
+    color: wheat;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: .3rem;
+    box-shadow: 2px 2px 6px 1px #ccc;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+}
+.jb-detail-wrap .jb-info .jb-apply button:active {
+    background-color: wheat;
+    color:#065279;
+}
+@media screen and (min-width: 992px) {
+    .jb-detail-wrap .jb-info .jb-addr {
+        font-size: 100%;
+    }
+}
+
+.text-center {
+    text-align: center;
+}

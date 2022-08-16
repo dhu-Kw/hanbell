@@ -1,0 +1,170 @@
+.p-content-body {
+    padding-bottom: 5rem;
+}
+.c-wrap {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+}
+.left-part, .right-part {
+    width: 100%;
+    position: relative;
+}
+.logo-box {
+    position: relative;
+    width: 40%;
+    left: 2rem;
+}
+.logo-box::before {
+    content: "";
+    display: block;
+    padding-top: 40%;
+}
+.logo-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.contact-method {
+    position: relative;
+    padding: 1rem 2rem;
+}
+.contact-method::after {
+    content: "";
+    width: calc(100% - 4rem);
+    height: 1px;
+    background-color: #ccc;
+    position: absolute;
+    top: 100%;
+    left: 2rem;
+}
+.contact-method h2 {
+    font-size: 130%;
+}
+.contact-method h2,
+.contact-method .methods {
+    padding: .5rem 0;
+}
+.contact-method .methods {
+    display: grid;
+    grid-template-columns: 3rem calc(100% - 3rem);
+    grid-template-rows: repeat(3, 1.8rem);
+}
+
+.locat-info {
+    position: relative;
+    width: calc(100% - 2rem);
+    padding-left: 2rem;
+}
+.locat-info h2 {
+    letter-spacing: .1rem;
+    padding: .5rem 0;
+    position: relative;
+}
+.locat-info h2::after {
+    width: 3.5rem;
+    height: 1px;
+    content: "";
+    background-color: #000;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.locat-info p {
+    line-height: 1.5rem;
+    padding-top: 1rem;
+}
+.locat-info .qr-code {
+    width: 25%;
+    position: relative;
+    margin: 1rem 0;
+    box-shadow: 2px 2px 5px 1px #ccc;
+}
+.locat-info .qr-code::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+.locat-info .qr-code img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+.right-part .locate {
+    padding: 0 2rem 2rem;
+}
+.right-part .map {
+    width: 100%;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px 1px #ccc;
+}
+.right-part .map::before {
+    content: "";
+    display: block;
+    padding-top: 66.667%;
+}
+@media screen and (min-width: 992px) {
+    .c-wrap {
+        width: calc(100 / 63 * 100%);
+        position: relative;
+        left: calc(10 / 21 * 100% * -1);
+        flex-direction: row;
+        padding-top: 5rem;
+    }
+    .left-part {
+        width: 30%;
+    }
+    .right-part {
+        width: 63%;
+    }
+    .logo-box {
+        width: 50%;
+        top: 3rem;
+        left: 5rem;
+    }
+    .logo-box::before {
+        padding-top: 40%;
+    }
+    .contact-method {
+        padding: 2rem 5rem;
+    }
+    .contact-method::after {
+        width: calc(100% - 10rem);
+        left: 5rem;
+    }
+    .contact-method h2 {
+        font-size: 140%;
+    }
+    .contact-method h2,
+    .contact-method .methods {
+        padding: .8rem 0;
+    }
+    .contact-method .methods {
+        display: flex;
+    }
+    .contact-method .methods span {
+        margin-right: .5rem;
+        letter-spacing: .1rem;
+    }
+    .contact-method .methods p {
+        margin-right: 2rem;
+    }
+    .locat-info {
+        position: relative;
+        width: calc(100% - 5rem);
+        padding-left: 5rem;
+    }
+    .locat-info .qr-code {
+        width: 40%;
+    }
+    .right-part .map::before {
+        padding-top: 60%;
+    }
+    .right-part .locate {
+        padding: 0 5rem 2rem;
+    }
+}
