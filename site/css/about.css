@@ -13,12 +13,15 @@
     color: aqua;
     width: 100%;
     height: 100%;
-    padding-left: 2rem;
     top: 0;
     cursor: default;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.title p,
+.title h1{
+    padding-left: 2rem;
 }
 @media screen and (min-width: 992px) {
     #demo {
