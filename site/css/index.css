@@ -2,6 +2,9 @@ button:active {
     border: none;
     outline: none;
 }
+*{
+	-webkit-overflow-scrolling: touch;
+}
 .noscroll {
     height: 100%;
     overflow: hidden;
@@ -41,7 +44,7 @@ header .logo-wrap a img {
 @media screen and (min-width: 992px) {
     header {
         height: 100px;
-        background-color: rgba(255, 255, 255, 0);
+        background-color: #ffffff00;
     }
     header .logo-wrap {
         width: 30%;
@@ -78,7 +81,7 @@ header .pc-nav .nav .nav-item {
     color: #fff;
     text-align: center;
     cursor: pointer;
-    background: rgba(0, 0, 0, 0.2) linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    background: #00000033 linear-gradient(to bottom, #00000033, #00000033);
     transition: background-color 0.5s ease-in-out;
     -moz-transition: background-color 0.5s ease-in-out;
     -webkit-transition: background-color 0.5s ease-in-out;
@@ -96,7 +99,7 @@ header .pc-nav .nav .nav-item:hover {
     background-color: aqua;
 }
 header .pc-nav .nav .nav-item-isClick {
-    background: rgba(0, 0, 255, 0.3) linear-gradient(to bottom, #1685a9, aqua);
+    background: #0000ff4d linear-gradient(to bottom, #1685a9, aqua);
 }
 
 header .mobile-nav {
@@ -304,6 +307,7 @@ header .mobile-nav .fork-2 {
 }
 .carousel span::after {
     color: #aaa;
+    font-size: 1.5rem;
 }
 .carousel span:focus {
     border: none;
@@ -379,6 +383,10 @@ header .mobile-nav .fork-2 {
     }
     .carousel .swiper-button-next {
         right: 5%;
+    }
+    .carousel span::after {
+        color: #aaa;
+        font-size: 3rem;
     }
 }
 
