@@ -1,3 +1,6 @@
+*{
+	-webkit-overflow-scrolling: touch;
+}
 button:active {
     border: none;
     outline: none;
